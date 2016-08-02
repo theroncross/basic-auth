@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:auth/auth');
 
 // Setup middleware
 app.use(morgan('combined'));
-app.use(bodyParser.json({ type: '*.*' }));
+app.use(bodyParser.json({ type: '*/*' }));
 router(app);
 
 // Server Setup
